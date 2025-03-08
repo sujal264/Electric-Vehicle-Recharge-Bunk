@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manage EV Bunks</title>
+    <link rel="stylesheet" href="../admin-css/manage-bunk.css">
+    <script type="module" src="../js/admin.js"></script>
+</head>
+<body>
+    <h2>Manage EV Bunks</h2>
+    <button onclick="window.location.href='booked-slots.html'">Booked Slots</button>
+    <button onclick="window.location.href='create-bunk.html'">Create New Bunk</button>
+    <button onclick="window.location.href='manage-slots.html'">Manage slot</button>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Contact</th>
+                <th>Google Map</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="bunkList"></tbody>
+    </table>
+
+    <button onclick="window.location.href='first_page.html'">Back to Home</button>
+
+</body>
+</html>

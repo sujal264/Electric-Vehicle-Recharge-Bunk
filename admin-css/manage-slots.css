@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #00ff00;
+    margin-bottom: 15px;
+}
+
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #00ff00;
+}
+
+select, input {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 16px;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 18px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button {
+    background: #00ff00;
+    color: black;
+}
+
+button:hover {
+    background: #16a085;
+}
+
+
+table {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+thead {
+    background: #00ff00;
+    color: black;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+td:last-child {
+    text-align: center;
+}
+
+
+tbody tr:hover {
+    background: #f1f1f1;
+}
+
+
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #00ff00;
+    }
+
+    td {
+        text-align: right;
+        padding: 10px;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #00ff00;
+    }
+}

@@ -1,0 +1,86 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Auth Container */
+.auth-container {
+    background: #00ff00;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+/* Heading */
+.auth-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 15px;
+    width: 93%;
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+
+/* Button */
+.auth-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.auth-btn:hover {
+    background: #121212;
+    color: white;
+}
+
+/* Links */
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+p a {
+    color: green;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 400px) {
+    .auth-container {
+        width: 90%;
+    }
+}

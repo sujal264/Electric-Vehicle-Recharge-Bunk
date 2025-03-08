@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Earth Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script defer src="script.js"></script> <!-- JavaScript for menu toggle -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="EV Earth Logo"> 
+            <span>EV.EARTH</span>
+        </div>
+
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#company">Company</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a class="create-acc" href="signup.html"><i class="fa-solid fa-user"></i> Create Account</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Products -->
+    <section id="products" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Powering the Future of EV Charging</h1>
+                <p>Join us in revolutionizing electric mobility with our smart charging solutions.</p>
+                <a href="signup.html" class="cta-btn">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero-section.png" alt="Hero Section">
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section for About -->
+    <section id="about" class="hero about-hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>About Us</h1>
+                <p>We are committed to revolutionizing the EV charging industry with smart and sustainable solutions.</p>
+                <button class="cta-btn">Learn More</button>
+            </div>
+            <div class="hero-image">
+                <img src="assets/about.png"About Us">
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section for Company -->
+    <section id="company" class="hero company-hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Our Company</h1>
+                <p>Since our inception, we have been at the forefront of EV charging innovation.</p>
+                <button class="cta-btn">Join Our Journey</button>
+            </div>
+            <div class="hero-image">
+                <img src="assets/company.png" alt="Company">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <a href="#">About Us</a>
+                <a href="#">Learn</a>
+                <a href="#">Contact</a>
+                <a href="#">Careers</a>
+                <a href="#">Partner with Us</a>
+            </div>
+            <div class="footer-column">
+                <h3>Social</h3>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+            <div class="footer-column">
+                <h3>Privacy & Terms</h3>
+                <a href="#">FAQs</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cancellation Policy</a>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 EV Earth. All rights reserved.</p>
+    </footer>
+    <script>
+        // Toggle Navbar for Small Screens
+        document.querySelector(".menu-toggle").addEventListener("click", function() 
+        {
+            document.querySelector(".nav-links").classList.toggle("active");
+        });
+
+    </script>
+</body>
+</html>

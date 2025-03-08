@@ -1,0 +1,101 @@
+/* Reset & General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #00ff00;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #1abc9c;
+}
+
+/* Profile Info */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+strong {
+    color: #00ff00;
+}
+
+/* Input Field */
+input {
+    width: 80%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    transition: 0.3s;
+    text-align: center;
+}
+
+input:focus {
+    border-color: #1abc9c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    width: 80%;
+    max-width: 200px;
+    padding: 12px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    background: #00ff00;
+    color: black;
+}
+
+button:hover {
+    background: #16a085;
+}
+
+/* Status Message */
+#statusMessage {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

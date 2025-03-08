@@ -1,0 +1,242 @@
+/* Reset & General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 🔹 Navbar Styling */
+.navbar {
+    width: 100%;
+    background: #1a1a1a;
+    color: #00ff00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1abc9c;
+}
+
+/* Profile Button */
+.nav-actions .create-acc {
+    background-color: #00ff00;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-actions .create-acc:hover {
+    background: #16a085;
+}
+
+/* 🔹 Mobile Navigation */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #2c3e50;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-actions {
+        display: none; /* Hide Profile Button */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* 🔹 Page Title */
+h2 {
+    font-size: 26px;
+    color: white;
+    margin-top: 100px;
+}
+
+/* 🔹 Search Input */
+input {
+    width: 320px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+input:focus {
+    border-color: #1abc9c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+}
+
+/* 🔹 Search Button */
+button {
+    width: 320px;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background: #00ff00;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #16a085;
+}
+
+/* 🔹 Table Styling */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table Header */
+thead {
+    background: #00ff00;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table Hover Effect */
+tbody tr:hover {
+    background: #f1f1f1;
+}
+
+/* 🔹 Responsive Table (Mobile View) */
+@media screen and (max-width: 600px) {
+    input, button {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background: white;
+        padding: 10px;
+    }
+
+    td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}

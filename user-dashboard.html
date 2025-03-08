@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/user.js"></script>
+</head>
+<body>
+    <h2>User Dashboard</h2>
+    <button id="logoutBtn">Logout</button>
+
+    <h3>Search EV Charging Stations</h3>
+    <input type="text" id="searchInput" placeholder="Enter city or area">
+    <button id="searchBtn">Search</button>
+
+    <h3>Available EV Bunks</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Contact</th>
+                <th>Google Map</th>
+                <th>Slots</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="bunkList"></tbody>
+    </table>
+
+    <h3>My Bookings</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Bunk Name</th>
+                <th>Booking Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="bookingList"></tbody>
+    </table>
+</body>
+</html>

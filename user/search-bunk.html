@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search EV Bunks</title>
+    <link rel="stylesheet" href="../user-css/search-bunk.css">
+    <script type="module" src="../js/user.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <!--  Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../assets/logo.png" alt="EV Earth Logo"> 
+            <span>EV.EARTH</span>
+        </div>
+
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="../user/search-bunk.html">Bunks</a></li>
+            <li><a href="../user/view-slots.html">Slots</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a class="create-acc" href="profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+        </div>
+    </nav>
+
+    
+    <h2>Search EV Bunks</h2>
+    <input type="text" id="searchInput" placeholder="Enter City or Area">
+    <button id="searchBtn">Search</button>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Contact</th>
+                <th>Google Map</th>
+            </tr>
+        </thead>
+        <tbody id="bunkList"></tbody>
+    </table>
+    <script>
+        // Toggle Navbar for Small Screens
+        document.querySelector(".menu-toggle").addEventListener("click", function() 
+        {
+            document.querySelector(".nav-links").classList.toggle("active");
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/admin.js"></script>
+</head>
+<body>
+    <h2>Admin Dashboard</h2>
+    <button id="logoutBtn">Logout</button>
+
+    <h3>Add EV Bunk</h3>
+    <input type="text" id="bunkName" placeholder="Bunk Name">
+    <input type="text" id="bunkAddress" placeholder="Address">
+    <input type="text" id="bunkContact" placeholder="Contact Number">
+    <input type="text" id="bunkMap" placeholder="Google Maps Link">
+    <button id="addBunkBtn">Add Bunk</button>
+
+    <h3>Manage Recharge Slots</h3>
+    <label>Select Date:</label>
+    <input type="date" id="slotDate">
+    <label>Start Time:</label>
+    <input type="time" id="slotTime">
+    <button id="setSlotBtn">Add Slot</button>
+
+    <h3>Available Slots</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="slotList"></tbody>
+    </table>
+    <h3>Booked Slots</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>User Email</th>
+                <th>Bunk Name</th>
+                <th>Booking Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="bookedSlotsList"></tbody>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manage Recharge Slots</title>
+    <link rel="stylesheet" href="../admin-css/manage-slots.css">
+    <script type="module" src="../js/admin.js"></script>
+</head>
+<body>
+    <h2>Manage Recharge Slots</h2>
+
+    <label>Select EV Bunk:</label>
+    <select id="bunkSelect"></select>  
+    <label>Select Date:</label>
+    <input type="date" id="slotDate">
+    <label>Start Time:</label>
+    <input type="time" id="slotTime">
+    <button id="setSlotBtn">Add Slot</button>
+
+    <h3>Available Slots</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Bunk Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="slotList"></tbody>
+    </table>
+
+    <p id="statusMessage"></p>
+
+    <button onclick="window.location.href='first_page.html'">Back to Home</button>
+
+</body>
+</html>
